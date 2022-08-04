@@ -1,0 +1,19 @@
+{
+  "name": "utillittle",
+  "version": "1.0.0",
+  "description": "Little Javascript utilities",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [
+    "utilities",
+    "util",
+    "utils"
+  ],
+  "author": "masyoudi@gmail.com",
+  "license": "MIT",
+  "devDependencies": {
+    "esbuild": "^0.14.53",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.7.4"
+  }
+}
