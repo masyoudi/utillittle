@@ -4,6 +4,8 @@ import isNil from "./is-nil";
  * @param {*} value
  * @returns {String}
  */
-export default function toChar(value: any): string {
+export function toChar(value: any): string {
   return (!isNil(value) ? value : "").toString();
 }
+
+export default toChar;

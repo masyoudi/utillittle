@@ -3,6 +3,8 @@
  * @param {*} value
  * @returns {Boolean}
  */
-export default function isNull(value: any): boolean {
+export function isNull(value: any): boolean {
   return value === null;
 }
+
+export default isNull;

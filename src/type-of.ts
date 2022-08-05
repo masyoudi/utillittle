@@ -3,6 +3,8 @@
  * @param {*} value
  * @returns {String}
  */
-export default function typeOf(value: any): string {
+export function typeOf(value: any): string {
   return typeof value;
 }
+
+export default typeOf;

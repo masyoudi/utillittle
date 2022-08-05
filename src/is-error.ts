@@ -6,8 +6,10 @@ import isObjectTag from "./is-object-tag";
  * @param {*}
  * @returns {Boolean}
  */
-export default function isError(value: any): boolean {
+export function isError(value: any): boolean {
   return (
     isObject(value) && (isObjectTag(value, "Error") || value instanceof Error)
   );
 }
+
+export default isError;

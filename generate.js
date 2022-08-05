@@ -19,10 +19,10 @@ try {
   let templates = [];
   filtered.forEach((file) => {
     file = file.replace(".ts", "");
-    funcNames.push("  ".concat(toCamelCase(file)));
+    funcNames.push(toCamelCase(file));
     templates.push(`import ${toCamelCase(file)} from "./${file}";\n`);
   });
-  templates.push(`export {\n${funcNames.join(",\n")}\n}\n`);
+  templates.push(`export {\n  ${funcNames.join(",\n  ")}\n};\n`);
 
   let filePath = path.resolve(__dirname, "./src/index.ts");
   fs.writeFileSync(filePath, templates.join(""));

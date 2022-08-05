@@ -5,6 +5,8 @@ import isType from "./is-type";
  * @param {*} value
  * @returns {Boolean}
  */
-export default function isString(value: any): boolean {
+export function isString(value: any): boolean {
   return isType(value, "string");
 }
+
+export default isString;

@@ -5,6 +5,8 @@ import toChar from "./to-char";
  * @param {String} value
  * @returns {String}
  */
-export default function toUpper(value: string): string {
+export function toUpper(value: string): string {
   return toChar(value).toUpperCase();
 }
+
+export default toUpper;

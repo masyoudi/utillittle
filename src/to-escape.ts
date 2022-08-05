@@ -5,7 +5,7 @@ import toChar from "./to-char";
  * @param {String} value
  * @returns {String}
  */
-export default function toEscape(value: string): string {
+export function toEscape(value: string): string {
   const map = {
     "&": "&amp;",
     "<": "&lt;",
@@ -15,3 +15,5 @@ export default function toEscape(value: string): string {
   };
   return toChar(value).replace(/[&<>"']/g, (m: string) => map[m]);
 }
+
+export default toEscape;

@@ -3,6 +3,8 @@
  * @param {Object} value
  * @returns {String}
  */
-export default function objToString(value: any): string {
+export function objToString(value: any): string {
   return Object.prototype.toString.call(value);
 }
+
+export default objToString;

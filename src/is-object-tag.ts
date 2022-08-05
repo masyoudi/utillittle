@@ -8,7 +8,9 @@ import isString from "./is-string";
  * @param {String} tag
  * @returns {Boolean}
  */
-export default function isObjectTag(value: any, tag: string): boolean {
+export function isObjectTag(value: any, tag: string): boolean {
   let valid = isObject(value) && isString(tag);
   return valid ? objToString(value) === "[object " + tag + "]" : false;
 }
+
+export default isObjectTag;

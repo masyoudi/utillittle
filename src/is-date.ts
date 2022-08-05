@@ -5,6 +5,8 @@ import isObjectTag from "./is-object-tag";
  * @param {*} value
  * @returns {Boolean}
  */
-export default function isDate(value: any): boolean {
+export function isDate(value: any): boolean {
   return isObjectTag(value, "Date");
 }
+
+export default isDate;
