@@ -10,7 +10,7 @@ import isUndefined from "./is-undefined";
  * @param {*} value
  * @returns {Boolean}
  */
-export default function isPrimitive(value: any): boolean {
+export function isPrimitive(value: any): boolean {
   return (
     isNull(value) ||
     isBoolean(value) ||
@@ -20,3 +20,5 @@ export default function isPrimitive(value: any): boolean {
     isUndefined(value)
   );
 }
+
+export default isPrimitive;

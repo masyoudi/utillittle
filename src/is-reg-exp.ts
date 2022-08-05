@@ -5,6 +5,8 @@ import isObjectTag from "./is-object-tag";
  * @param {*} value
  * @returns {Boolean}
  */
-export default function isRegExp(value: any): boolean {
+export function isRegExp(value: any): boolean {
   return isObjectTag(value, "RegExp");
 }
+
+export default isRegExp;

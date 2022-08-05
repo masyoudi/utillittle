@@ -63,4 +63,4 @@ export {
   toUpperFirst,
   toUpper,
   typeOf
-}
+};

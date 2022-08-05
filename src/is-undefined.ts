@@ -3,6 +3,8 @@
  * @param {*} value
  * @returns {Boolean}
  */
-export default function isUndefined(value: any): boolean {
+export function isUndefined(value: any): boolean {
   return value === void 0;
 }
+
+export default isUndefined;

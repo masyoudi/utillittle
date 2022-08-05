@@ -6,6 +6,8 @@ import isType from "./is-type";
  * @param {*} value
  * @returns {Boolean}
  */
-export default function isPlainObject(value: any): boolean {
+export function isPlainObject(value: any): boolean {
   return !isNull(value) && isType(value, "object") && !Array.isArray(value);
 }
+
+export default isPlainObject;

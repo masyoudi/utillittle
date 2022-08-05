@@ -5,6 +5,8 @@
  * @param {Number} max
  * @returns {Number}
  */
-export default function bound(value: number, min: number, max: number): number {
+export function bound(value: number, min: number, max: number): number {
   return Math.max(min, Math.min(max, value));
 }
+
+export default bound;

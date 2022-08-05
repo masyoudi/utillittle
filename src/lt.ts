@@ -4,6 +4,8 @@
  * @param {*} right
  * @returns {Boolean}
  */
-export default function lt(left: any, right: any): boolean {
+export function lt(left: any, right: any): boolean {
   return left < right;
 }
+
+export default lt;

@@ -5,6 +5,8 @@ import toChar from "./to-char";
  * @param {String} value
  * @returns {String}
  */
-export default function toLower(value: string): string {
+export function toLower(value: string): string {
   return toChar(value).toLowerCase();
 }
+
+export default toLower;

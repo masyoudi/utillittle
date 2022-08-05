@@ -5,7 +5,9 @@ import toChar from "./to-char";
  * @param {String} value
  * @returns {String}
  */
-export default function toUpperFirst(value: string): string {
+export function toUpperFirst(value: string): string {
   let str = toChar(value);
   return str.charAt(0).toUpperCase().concat(str.slice(1));
 }
+
+export default toUpperFirst;

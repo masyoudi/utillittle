@@ -6,6 +6,8 @@ import isUndefined from "./is-undefined";
  * @param {*} value
  * @returns {Boolean}
  */
-export default function isNil(value: any): boolean {
+export function isNil(value: any): boolean {
   return isNull(value) || isUndefined(value);
 }
+
+export default isNil;

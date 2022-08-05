@@ -6,6 +6,8 @@ import typeOf from "./type-of";
  * @param {String} typ
  * @returns {Boolean}
  */
-export default function isType(value: any, typ: string): boolean {
+export function isType(value: any, typ: string): boolean {
   return typeOf(value) === typ;
 }
+
+export default isType;
