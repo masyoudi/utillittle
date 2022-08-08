@@ -7,13 +7,21 @@ import toChar from "./to-char";
  */
 export function toUnescape(value: string): string {
   const map = {
-    "&amp;": "&",
+    "&quot;": '"',
+    "&#x27;": "'",
     "&lt;": "<",
     "&gt;": ">",
-    "&quot;": '"',
-    "&#39;": "'",
+    "&#x2F;": "/",
+    "&#x5C;": "\\",
+    "&#96;": "`",
+    "&amp;": "&",
   };
-  return toChar(value).replace(/[&<>"']/g, (m: string) => map[m]);
+  let str = toChar(value);
+  for (let key in map) {
+    str = str.replace(new RegExp(key, "g"), map[key]);
+  }
+
+  return str;
 }
 
 export default toUnescape;
