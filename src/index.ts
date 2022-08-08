@@ -20,12 +20,14 @@ import isString from "./is-string";
 import isSymbol from "./is-symbol";
 import isType from "./is-type";
 import isUndefined from "./is-undefined";
+import isUUID from "./is-uuid";
 import lt from "./lt";
 import lte from "./lte";
 import objToString from "./obj-to-string";
 import toChar from "./to-char";
 import toEscape from "./to-escape";
 import toLower from "./to-lower";
+import toUnescape from "./to-unescape";
 import toUpperFirstWord from "./to-upper-first-word";
 import toUpperFirst from "./to-upper-first";
 import toUpper from "./to-upper";
@@ -53,12 +55,14 @@ export {
   isSymbol,
   isType,
   isUndefined,
+  isUUID,
   lt,
   lte,
   objToString,
   toChar,
   toEscape,
   toLower,
+  toUnescape,
   toUpperFirstWord,
   toUpperFirst,
   toUpper,
