@@ -17,7 +17,7 @@ try {
     return arr.join("");
   };
   const transformWord = (str) => {
-    const pascalCase = ["is-uuid"];
+    const pascalCase = ["is-ascii", "is-uuid"];
     const isPascal = pascalCase.indexOf(str) !== -1;
     return isPascal ? toPascalCase(str) : toCamelCase(str);
   };

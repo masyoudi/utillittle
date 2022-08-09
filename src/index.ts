@@ -3,6 +3,7 @@ import debounce from "./debounce";
 import gt from "./gt";
 import gte from "./gte";
 import isArray from "./is-array";
+import isASCII from "./is-ascii";
 import isBoolean from "./is-boolean";
 import isBuffer from "./is-buffer";
 import isDate from "./is-date";
@@ -25,6 +26,7 @@ import isUndefined from "./is-undefined";
 import isUUID from "./is-uuid";
 import lt from "./lt";
 import lte from "./lte";
+import objMerge from "./obj-merge";
 import objToString from "./obj-to-string";
 import toChar from "./to-char";
 import toEscape from "./to-escape";
@@ -40,6 +42,7 @@ export {
   gt,
   gte,
   isArray,
+  isASCII,
   isBoolean,
   isBuffer,
   isDate,
@@ -62,6 +65,7 @@ export {
   isUUID,
   lt,
   lte,
+  objMerge,
   objToString,
   toChar,
   toEscape,

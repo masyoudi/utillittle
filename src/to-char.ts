@@ -5,7 +5,8 @@ import isNil from "./is-nil";
  * @returns {String}
  */
 export function toChar(value: any): string {
-  return (!isNil(value) ? value : "").toString();
+  let str = isNil(value) || (isNaN(value) && !value.length) ? "" : value;
+  return String(str);
 }
 
 export default toChar;
