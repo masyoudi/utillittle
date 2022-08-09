@@ -1,3 +1,4 @@
+import asciiToArray from "./ascii-to-array";
 import bound from "./bound";
 import debounce from "./debounce";
 import gt from "./gt";
@@ -36,4 +37,4 @@ import toUpperFirstWord from "./to-upper-first-word";
 import toUpperFirst from "./to-upper-first";
 import toUpper from "./to-upper";
 import typeOf from "./type-of";
-export { bound, debounce, gt, gte, isArray, isASCII, isBoolean, isBuffer, isDate, isEmpty, isError, isFunction, isIn, isNil, isNull, isNumber, isObjectTag, isObject, isPlainObject, isPrimitive, isRegExp, isString, isSymbol, isType, isUndefined, isUUID, lt, lte, objMerge, objToString, toChar, toEscape, toLower, toUnescape, toUpperFirstWord, toUpperFirst, toUpper, typeOf };
+export { asciiToArray, bound, debounce, gt, gte, isArray, isASCII, isBoolean, isBuffer, isDate, isEmpty, isError, isFunction, isIn, isNil, isNull, isNumber, isObjectTag, isObject, isPlainObject, isPrimitive, isRegExp, isString, isSymbol, isType, isUndefined, isUUID, lt, lte, objMerge, objToString, toChar, toEscape, toLower, toUnescape, toUpperFirstWord, toUpperFirst, toUpper, typeOf };

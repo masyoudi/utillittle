@@ -1,8 +1,18 @@
 /**
- * Checks if `left` is greater than or equal `right`
- * @param {*} left
- * @param {*} right
- * @returns {Boolean}
+ * Checks if `left` is greater than or equal `right`.
+ * @param {*} left The left value to compare.
+ * @param {*} right The right value for comparison.
+ * @returns {boolean} Returns `true` if `left` is greater than or equal `right`, else `false`.
+ * @example
+ *
+ * gte(10, 9);
+ * // => true
+ *
+ * gte(10, 10);
+ * // => true
+ *
+ * gte(10, 11);
+ * // => false
  */
 export declare function gte(left: any, right: any): boolean;
 export default gte;
