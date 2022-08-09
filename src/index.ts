@@ -9,6 +9,7 @@ import isDate from "./is-date";
 import isEmpty from "./is-empty";
 import isError from "./is-error";
 import isFunction from "./is-function";
+import isIn from "./is-in";
 import isNil from "./is-nil";
 import isNull from "./is-null";
 import isNumber from "./is-number";
@@ -45,6 +46,7 @@ export {
   isEmpty,
   isError,
   isFunction,
+  isIn,
   isNil,
   isNull,
   isNumber,
