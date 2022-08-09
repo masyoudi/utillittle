@@ -1,3 +1,4 @@
+import asciiToArray from "./ascii-to-array";
 import bound from "./bound";
 import debounce from "./debounce";
 import gt from "./gt";
@@ -37,6 +38,7 @@ import toUpperFirst from "./to-upper-first";
 import toUpper from "./to-upper";
 import typeOf from "./type-of";
 export {
+  asciiToArray,
   bound,
   debounce,
   gt,
