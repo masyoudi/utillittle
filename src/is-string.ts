@@ -6,7 +6,7 @@ import isType from "./is-type";
  * @returns {Boolean}
  */
 export function isString(value: any): boolean {
-  return isType(value, "string");
+  return isType(value, "string") || value instanceof String;
 }
 
 export default isString;
