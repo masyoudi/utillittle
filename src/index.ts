@@ -4,6 +4,7 @@ import gt from "./gt";
 import gte from "./gte";
 import isArray from "./is-array";
 import isBoolean from "./is-boolean";
+import isBuffer from "./is-buffer";
 import isDate from "./is-date";
 import isEmpty from "./is-empty";
 import isError from "./is-error";
@@ -39,6 +40,7 @@ export {
   gte,
   isArray,
   isBoolean,
+  isBuffer,
   isDate,
   isEmpty,
   isError,
